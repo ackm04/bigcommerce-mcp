@@ -1,7 +1,7 @@
 {
   "name": "@erplinker/bigcommerce-mcp",
-  "version": "1.0.0",
-  "description": "BigCommerce developer documentation MCP server \u2014 REST APIs, GraphQL, Webhooks, Auth, Stencil, Catalyst & more",
+  "version": "1.0.1",
+  "description": "BigCommerce developer documentation MCP server — REST APIs, GraphQL, Webhooks, Auth, Stencil, Catalyst & more",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
