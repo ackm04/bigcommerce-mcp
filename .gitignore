@@ -7,3 +7,5 @@ dist/
 CURSOR_MASTER_PROMPT.md
 .cursorrules
 .cursor/
+firebase-debug.log
+*.log

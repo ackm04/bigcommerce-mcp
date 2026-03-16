@@ -118,17 +118,15 @@ Paste the contents of the Master Prompt section at the bottom of this README.
 
 **Option B — Per-project `.cursorrules` (recommended for BC projects):**
 
-```bash
-# Copy from global npm install
-cp $(npm root -g)/@erplinker/bigcommerce-mcp/.cursorrules ./.cursorrules
-```
+Create a `.cursorrules` file in your project root and paste the Master Prompt from the section below.
 
 **Option C — New MDC format (Cursor 0.43+):**
 
 ```bash
 mkdir -p .cursor/rules
-cp $(npm root -g)/@erplinker/bigcommerce-mcp/.cursor/rules/bigcommerce.mdc ./.cursor/rules/bigcommerce.mdc
 ```
+
+Create `.cursor/rules/bigcommerce.mdc` and paste the Master Prompt from the section below.
 
 ---
 
@@ -198,36 +196,6 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
 "How do I create a channel and assign products to it in MSF?"
 "Generate bulk inventory sync code with rate limit handling"
 ```
-
----
-
-## Publish to npm
-
-```bash
-# 1. Login
-npm login
-# (uses npmjs.com by default)
-
-# 2. Confirm scope access (for @bigcommerce org packages)
-# Ensure your npm account is a member of the @erplinker organization
-
-# 3. Dry run — inspect what gets published
-npm pack --dry-run
-
-# 4. Publish
-npm publish --access public
-
-# 5. Verify live
-npm info @erplinker/bigcommerce-mcp
-
-# --- Future version updates ---
-npm version patch    # 1.0.0 → 1.0.1 (bug fixes)
-npm version minor    # 1.0.0 → 1.1.0 (new tools/endpoints)
-npm version major    # 1.0.0 → 2.0.0 (breaking changes)
-npm publish --access public
-```
-
-> **Note:** If publishing under a personal namespace instead of `@bigcommerce`, update `"name"` in `package.json` to `@yourusername/mcp-developer-docs` before publishing.
 
 ---
 
@@ -337,11 +305,6 @@ bigcommerce-mcp/
 │   └── utils/
 │       └── code-generator.ts        # Code example generators (REST, GraphQL, OAuth)
 ├── dist/                            # Compiled output (ships with npm package)
-├── .cursor/
-│   └── rules/
-│       └── bigcommerce.mdc          # Cursor MDC rules (Cursor 0.43+)
-├── .cursorrules                     # Cursor legacy rules file
-├── CURSOR_MASTER_PROMPT.md          # Full master prompt (extended version)
 ├── claude_desktop_config.example.json
 ├── package.json
 ├── tsconfig.json
