@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "bigcommerce": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/bigcommerce-mcp/dist/index.js"],
+      "description": "BigCommerce Developer Documentation — REST APIs, GraphQL, Webhooks, Auth, Stencil, Catalyst"
+    }
+  }
+}

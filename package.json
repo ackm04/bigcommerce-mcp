@@ -1,0 +1,62 @@
+{
+  "name": "@erplinker/bigcommerce-mcp",
+  "version": "1.0.0",
+  "description": "BigCommerce developer documentation MCP server \u2014 REST APIs, GraphQL, Webhooks, Auth, Stencil, Catalyst & more",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "bigcommerce",
+    "mcp",
+    "model-context-protocol",
+    "api",
+    "ecommerce",
+    "developer-tools",
+    "graphql",
+    "webhooks",
+    "rest-api",
+    "cursor",
+    "claude",
+    "ai"
+  ],
+  "author": "BigCommerce Developer Tools",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "cheerio": "^1.2.0",
+    "node-fetch": "^3.3.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "type": "module",
+  "bin": {
+    "bigcommerce-mcp": "dist/index.js"
+  },
+  "homepage": "https://github.com/ackm04/bigcommerce-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ackm04/bigcommerce-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ackm04/bigcommerce-mcp/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
