@@ -2,32 +2,16 @@
 
 github:
   - ackm04
-  - yourorgname
+  - erp-linker
 
-patreon: your_patreon_username
+patreon: erplinker
 
-open_collective: your_open_collective_slug
 
-ko_fi: your_kofi_username
+ko_fi: ackm04
 
-tidelift: npm/your-package-name
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'X8X21WX8L9');kofiwidget2.draw();</script> 
 
-community_bridge: your-project-name
 
-liberapay: your_liberapay_username
+buy_me_a_coffee: ackm
 
-issuehunt: your_issuehunt_username
-
-lfx_crowdfunding: your-project-name
-
-polar: your_polar_username
-
-buy_me_a_coffee: your_bmac_username
-
-thanks_dev: your_thanksdev_username
-
-custom:
-  - https://yourwebsite.com/sponsor
-  - https://yourstripe-link.com
-  - https://yourgumroad.com
-  - https://yourpaypal.me
+thanks_dev: ackm04
